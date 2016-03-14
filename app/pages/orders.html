@@ -26,13 +26,15 @@
         <label for="quantity">Quantity</label><br>
         <input name="quantity" id="quantity" type="number">
         <input class="add" value="Add items" type="submit"><br>
-        <label for="name">Name</label><br>
-        <input type="text" name="name"><br>
-        <label for="phonenumber">Phone Number</label><br>
-        <input type="text" name="phonenumber"><br>
-        <label for="address">Address</label><br>
-        <input type="text" name="address"><br>
-        <button class="deliver">Deliver it!</button>
+        <form action="https://galvanize-eats-api.herokuapp.com/orders" method="POST">
+          <label for="name">Name</label><br>
+          <input type="text" name="name" required><br>
+          <label for="phonenumber">Phone Number</label><br>
+          <input type="text" name="phonenumber"  required><br>
+          <label for="address">Address</label><br>
+          <input type="text" name="address"  required><br>
+          <input type="submit" class="deliver">
+        </form>
       </div>
 
       <div class="colR">
