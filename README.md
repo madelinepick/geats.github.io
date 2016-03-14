@@ -1,2 +1,2 @@
 # galvanize-eats
-[Link to project](www.madelinepick.github.io/geats.github.io)
+[Link to project](madelinepick.github.io/geats.github.io)
