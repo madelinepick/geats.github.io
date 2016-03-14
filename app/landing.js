@@ -1,6 +1,5 @@
 $(function(){
-  console.log("hello");
   $(".order").on("click", function(){
-    window.location.href = "../pages/orders.html";
+    window.location.href = "../app/pages/orders.html";
   })
 })
