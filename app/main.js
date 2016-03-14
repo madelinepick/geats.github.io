@@ -1,7 +1,6 @@
 $(function(){
   $.get("https://galvanize-eats-api.herokuapp.com/menu", function( data ) {
   var foodArray = data.menu
-  console.log(foodArray);
   foodArray.forEach(function(foodArray){
     if(foodArray.type == "burger"){
       $("#burger").append("<div class='itemslist'><p class='left' id='"+foodArray.id+"'>"+foodArray.name+"</p><p class='right'>"+foodArray.price+"</p></div>");
@@ -32,7 +31,6 @@ $(function(){
         var price = 10.99
         $(".colR").prepend("<p class='left orderlist'>"+quant+"x Cheeseburger</p><p class='right orderlist'>$"+quant*price+"</p>");
         var subtotal = parseFloat($("#subtotal").text());
-        console.log(subtotal);
         subtotal += quant*price;
         $("#subtotal").text(subtotal);
         $("#tax").text((parseFloat($("#subtotal").text())*0.08).toFixed(2));
@@ -42,7 +40,6 @@ $(function(){
         var price = 8.99
         $(".colR").prepend("<p class='left orderlist'>"+quant+"x Hamburger</p><p class='right orderlist'>$"+quant*price+"</p>");
         var subtotal = parseFloat($("#subtotal").text());
-        console.log(subtotal);
         subtotal += quant*price;
         $("#subtotal").text(subtotal);
         $("#tax").text((parseFloat($("#subtotal").text())*0.08).toFixed(2));
@@ -52,7 +49,6 @@ $(function(){
         var price = 9.99
         $(".colR").prepend("<p class='left orderlist'>"+quant+"x Cheese Pizza</p><p class='right orderlist'>$"+quant*price+"</p>");
         var subtotal = parseFloat($("#subtotal").text());
-        console.log(subtotal);
         subtotal += quant*price;
         $("#subtotal").text(subtotal);
         $("#tax").text((parseFloat($("#subtotal").text())*0.08).toFixed(2));
@@ -62,7 +58,6 @@ $(function(){
         var price = 11.99
         $(".colR").prepend("<p class='left orderlist'>"+quant+"x Pepperoni Pizza</p><p class='right orderlist'>$"+quant*price+"</p>");
         var subtotal = parseFloat($("#subtotal").text());
-        console.log(subtotal);
         subtotal += quant*price;
         $("#subtotal").text(subtotal);
         $("#tax").text((parseFloat($("#subtotal").text())*0.08).toFixed(2));
@@ -72,7 +67,6 @@ $(function(){
         var price = 12.99
         $(".colR").prepend("<p class='left orderlist'>"+quant+"x Sausage Pizza</p><p class='right orderlist'>$"+quant*price+"</p>");
         var subtotal = parseFloat($("#subtotal").text());
-        console.log(subtotal);
         subtotal += quant*price;
         $("#subtotal").text(subtotal);
         $("#tax").text((parseFloat($("#subtotal").text())*0.08).toFixed(2));
