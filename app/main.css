@@ -37,6 +37,10 @@ h4{
   padding: 20px;
   text-align: center;
 }
+h5{
+  margin-bottom: 0px;
+  font-weight: 900;
+}
 footer{
   background-color: black;
 }
@@ -81,7 +85,7 @@ label{
   color: white;
 }
 .orderpage{
-  background-color: rgb(238, 166, 42);
+  background: linear-gradient(to bottom, #eab92d 0%,#ce8612 100%);
 }
 .items{
   background-color: white;
@@ -103,16 +107,16 @@ label{
 }
 .left{
   display: inline;
-  font-size: 25px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .right{
  float: right;
  display: inline;
- font-size: 25px;
- margin-top: 10px;
- margin-bottom: 10px;
+ font-size: 20px;
+ margin-top: 5px;
+ margin-bottom: 5px;
 }
 .colL{
   flex: 0 0 60%;
@@ -152,9 +156,10 @@ label{
 input[type="text"]{
   width: 435px;
   height: 30px;
+  background-color: rgb(238, 235, 184)
 }
 .orderlist{
-  font-size: 10px;
+  font-size: 12px;
   margin: 5px 10px;
 }
 .money{
