@@ -1,5 +1,5 @@
 $(function(){
   $(".order").on("click", function(){
-    window.location.href = "/geats.github.io/app/pages/orders.html";
+    window.location.href = "http://madelinepick.github.io/geats.github.io/app/pages/orders.html";
   })
 })
