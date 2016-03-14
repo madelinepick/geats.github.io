@@ -124,6 +124,7 @@ label{
 }
 .add{
   margin-left: 20px;
+  text-align: center;
   width: 150px;
   height: 40px;
   border: none;
@@ -153,7 +154,11 @@ input[type="text"]{
   height: 30px;
 }
 .orderlist{
-  font-size: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
+  font-size: 10px;
+  margin: 5px 10px;
+}
+.money{
+  position: absolute;
+  margin-top: 440px;
+  margin-left: 180px;
 }

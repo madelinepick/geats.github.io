@@ -21,27 +21,63 @@ $(function(){
     }
   })
   $(".add").on('click', function(){
+    if($("#quantity").val() === ''){
+      alert ("Please enter a quantity")
+      return false;
+    }
+    if($("#quantyt").val() !== ''){
     var quant = $("#quantity").val();
 
-    if($("#1").parent().css('background-color') === "rgb(193, 193, 193)"){
-      var price = 10.99
-      $(".colR").append("<p class='left orderlist'>"+quant+"x Cheeseburger</p><p class='right orderlist'>$"+quant*price"</p>");
-    }
-    if($("#3").parent().css('background-color') === "rgb(193, 193, 193)"){
-      var price = 8.99
-      $(".colR").append("<p class='left orderlist'>"+quant+"x Hamburger</p><p class='right orderlist'>8.99</p>");
-    }
-    if($("#2").parent().css('background-color') === "rgb(193, 193, 193)"){
-      var price = 9.99
-      $(".colR").append("<p class='left orderlist'>"+quant+"x Cheese Pizza</p><p class='right orderlist'>9.99</p>");
-    }
-    if($("#4").parent().css('background-color') === "rgb(193, 193, 193)"){
-      var price = 11.99
-      $(".colR").append("<p class='left orderlist'>"+Pepperoni Pizza</p><p class='right orderlist'>11.99</p>");
-    }
-    if($("#5").parent().css('background-color') === "rgb(193, 193, 193)"){
-      var price = 12.99
-      $(".colR").append("<p class='left orderlist'>Sausage Pizza</p><p class='right orderlist'>12.99</p>");
+      if($("#1").parent().css('background-color') === "rgb(193, 193, 193)"){
+        var price = 10.99
+        $(".colR").prepend("<p class='left orderlist'>"+quant+"x Cheeseburger</p><p class='right orderlist'>$"+quant*price+"</p>");
+        var subtotal = parseFloat($("#subtotal").text());
+        console.log(subtotal);
+        subtotal += quant*price;
+        $("#subtotal").text(subtotal);
+        $("#tax").text((parseFloat($("#subtotal").text())*0.08).toFixed(2));
+        $("#total").text((parseFloat($("#subtotal").text())+parseFloat($("#tax").text())).toFixed(2));
+      }
+      if($("#3").parent().css('background-color') === "rgb(193, 193, 193)"){
+        var price = 8.99
+        $(".colR").prepend("<p class='left orderlist'>"+quant+"x Hamburger</p><p class='right orderlist'>$"+quant*price+"</p>");
+        var subtotal = parseFloat($("#subtotal").text());
+        console.log(subtotal);
+        subtotal += quant*price;
+        $("#subtotal").text(subtotal);
+        $("#tax").text((parseFloat($("#subtotal").text())*0.08).toFixed(2));
+        $("#total").text((parseFloat($("#subtotal").text())+parseFloat($("#tax").text())).toFixed(2));
+      }
+      if($("#2").parent().css('background-color') === "rgb(193, 193, 193)"){
+        var price = 9.99
+        $(".colR").prepend("<p class='left orderlist'>"+quant+"x Cheese Pizza</p><p class='right orderlist'>$"+quant*price+"</p>");
+        var subtotal = parseFloat($("#subtotal").text());
+        console.log(subtotal);
+        subtotal += quant*price;
+        $("#subtotal").text(subtotal);
+        $("#tax").text((parseFloat($("#subtotal").text())*0.08).toFixed(2));
+        $("#total").text((parseFloat($("#subtotal").text())+parseFloat($("#tax").text())).toFixed(2));
+      }
+      if($("#4").parent().css('background-color') === "rgb(193, 193, 193)"){
+        var price = 11.99
+        $(".colR").prepend("<p class='left orderlist'>"+quant+"x Pepperoni Pizza</p><p class='right orderlist'>$"+quant*price+"</p>");
+        var subtotal = parseFloat($("#subtotal").text());
+        console.log(subtotal);
+        subtotal += quant*price;
+        $("#subtotal").text(subtotal);
+        $("#tax").text((parseFloat($("#subtotal").text())*0.08).toFixed(2));
+        $("#total").text((parseFloat($("#subtotal").text())+parseFloat($("#tax").text())).toFixed(2));
+      }
+      if($("#5").parent().css('background-color') === "rgb(193, 193, 193)"){
+        var price = 12.99
+        $(".colR").prepend("<p class='left orderlist'>"+quant+"x Sausage Pizza</p><p class='right orderlist'>$"+quant*price+"</p>");
+        var subtotal = parseFloat($("#subtotal").text());
+        console.log(subtotal);
+        subtotal += quant*price;
+        $("#subtotal").text(subtotal);
+        $("#tax").text((parseFloat($("#subtotal").text())*0.08).toFixed(2));
+        $("#total").text((parseFloat($("#subtotal").text())+parseFloat($("#tax").text())).toFixed(2));
+      }
     }
   })
 })
