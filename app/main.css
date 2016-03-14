@@ -40,6 +40,10 @@ h4{
 footer{
   background-color: black;
 }
+label{
+  font-size: 12px;
+  font-style: italic;
+}
 .order{
   height:60px;
   width: 700px;
@@ -58,6 +62,10 @@ footer{
   margin-left: 100px;
   margin-right: 100px;
 }
+.smaller{
+  margin-left: 250px;
+  margin-right: 250px;
+}
 .col{
   flex: 1;
   margin-left: 20px;
@@ -71,4 +79,81 @@ footer{
 }
 .fa-sun-o{
   color: white;
+}
+.orderpage{
+  background-color: rgb(238, 166, 42);
+}
+.items{
+  background-color: white;
+  overflow: auto;
+  height: 200px;
+  width: 425px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.itemslist{
+  color: black;
+  clear: both;
+  height: 40px;
+  padding: 5px;
+}
+.left, h5{
+  float: left;
+  clear: both;
+}
+.left{
+  display: inline;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.right{
+ float: right;
+ display: inline;
+ font-size: 25px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+.colL{
+  flex: 0 0 60%;
+}
+.colR{
+  flex: 0 0 40%;
+  height: 510px;
+  background-color: white;
+}
+.add{
+  margin-left: 20px;
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: rgb(44, 119, 231);
+  box-shadow: 1px 1px 1px black;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+.deliver{
+  margin-top: 20px;
+  width: 440px;
+  height: 40px;
+  border: none;
+  background-color: rgb(44, 126, 82);
+  box-shadow: 1px 1px 1px black;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+#quantity{
+  width: 60px;
+  height: 30px;
+}
+input[type="text"]{
+  width: 435px;
+  height: 30px;
+}
+.orderlist{
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
